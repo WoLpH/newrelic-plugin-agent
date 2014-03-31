@@ -144,7 +144,7 @@ Enable the HTTPd server status page in the default virtual host. The following e
         SetHandler server-status
         Order deny,allow
         Deny from all
-        Allow from all
+        Allow from 127.0.0.1
     </Location>
 
 For HTTPd 2.4, it should look something like:
